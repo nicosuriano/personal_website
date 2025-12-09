@@ -1,8 +1,8 @@
 
 .home-logo-button {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 15px;
+  left: 15px;
   background: none;
   border: none;
   cursor: pointer;
@@ -19,4 +19,21 @@
 
 .home-logo-button:hover .logo{
   transform: scale(1.1);
+}
+
+.contact-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 4rem;
+  color: var(--primaryOrange);
+  transition: transform 0.2s ease;
+  z-index: 100;
+}
+
+.contact-button:hover {
+  transform: scale(1.2);
 }

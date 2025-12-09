@@ -3,20 +3,27 @@ import NSLogo from "./assets/logo.svg";
 import HeadShot from "./assets/bioPhoto.png";
 import Title from "./assets/webTitle.png";
 import LogoButton from "./components/logoButton";
+import ContactButton from "./components/contactButton";
 import "./css/homepage.css";
 import "./css/logo.css";
 
-export default function Home() {
+export default function Home() {      
+
   return (
     <main className="home-container">
       <LogoButton />
+      <ContactButton href="/web_pages/contact">Contact</ContactButton>
 
-      <header className="home-header" style={{marginTop: "50px"}}>
-        <Image
-          src={Title}
-          alt="Nico Suriano Header"
-          className="home-title"
-        />
+      <header className="home-header">
+        <div className="title-left">
+          Nico 
+          <span style={{color: "var(--primaryOrange)", marginLeft: "20px"}}>Suriano</span>
+        </div>
+
+        <div className="title-right">
+          <div style={{color: "var(--primaryOrange)"}}>Art +</div>
+          <div>Design</div>
+        </div>
       </header>
 
       <section className="home-images-container">

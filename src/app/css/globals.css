@@ -7,6 +7,15 @@
   --textTeal: #166879;
 }
 
+@font-face {
+  font-family: 'Neoneon';
+  src: url('/fonts/Neoneon.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 html,
 body {
   max-width: 100vw;
