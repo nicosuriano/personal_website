@@ -1,0 +1,49 @@
+/* Experience Section */
+
+.exp-section {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.section-title{
+    font-size: 28px;
+    color: var(--primaryTeal);
+    margin-bottom: 10px;
+}
+
+.exp-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  margin-top: 50px;
+}
+
+.exp-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 3px solid var(--primaryTeal);
+  border-radius: 18px;
+  padding: 25px;
+  transition: 0.3s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primaryOrange);
+}
+
+.exp-card h3 {
+  color: var(--primaryOrange);
+  font-family: "Hammersmith One";
+  margin-bottom: 20px;
+}
+
+.exp-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.exp-card li {
+  margin-bottom: 8px;
+  color: var(--primaryTeal);
+  opacity: 0.9;
+}

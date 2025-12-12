@@ -50,19 +50,19 @@ export default function Home() {
         <ImageButton 
           label="Website Design"
           image={WebEx}
-          href="/web_pages/webdesign"
+          href="/web_pages/web"
         />
 
         <ImageButton 
           label="Creative Expression"
           image={ArtEx}
-          href="/web_pages/creative"
+          href="/web_pages/art"
         />
 
         <ImageButton 
           label="Graphic Design"
           image={GraphicEx}
-          href="/web_pages/graphicdesign"
+          href="/web_pages/graphic"
         />
       </section>
 

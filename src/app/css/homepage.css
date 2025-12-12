@@ -71,7 +71,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  gap: 60px;
+  gap: 70px;
   margin-top: 40px;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .about-box {
-  width: 600px;
+  width: 550px;
   text-align: left;
 }
 

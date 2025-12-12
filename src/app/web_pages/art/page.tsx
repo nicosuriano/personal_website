@@ -12,7 +12,7 @@ import "../../css/homepage.css";
 import "../../css/logo.css";
 
 
-export default function Contact() {
+export default function Art() {
 
   return (
     <main className="home-container">
@@ -21,9 +21,9 @@ export default function Contact() {
 
       <header className="home-header">
         <div className="title-left">
-          Contact
+          Creative
           <span style={{color: "var(--primaryOrange)", marginLeft: "20px"}}>
-            Me
+            Expression
           </span>
         </div>
       </header>

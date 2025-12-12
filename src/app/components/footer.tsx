@@ -21,7 +21,7 @@ export default function Footer() {
     const footerLinks = [
     { label: "Home", href: "/" },
     { label: "About", href: "/web_pages/experience" },
-    { label: "Work", href: "/web_pages/gallery" },
+    { label: "Gallery", href: "/web_pages/gallery" },
     { label: "Contact", href: "/web_pages/contact" },
   ];
   return (
@@ -54,7 +54,7 @@ export default function Footer() {
                     About
                 </Link>
                 <Link href="/web_pages/gallery" className="footer-nav-item">
-                    Work
+                    Gallery
                 </Link>
                 <Link href="/web_pages/contact" className="footer-nav-item">
                     Contact

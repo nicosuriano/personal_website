@@ -12,7 +12,7 @@ import "../../css/homepage.css";
 import "../../css/logo.css";
 
 
-export default function Contact() {
+export default function WebDesign() {
 
   return (
     <main className="home-container">
@@ -21,9 +21,9 @@ export default function Contact() {
 
       <header className="home-header">
         <div className="title-left">
-          Contact
+          Website
           <span style={{color: "var(--primaryOrange)", marginLeft: "20px"}}>
-            Me
+            Design
           </span>
         </div>
       </header>
