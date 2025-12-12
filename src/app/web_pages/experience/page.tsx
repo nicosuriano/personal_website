@@ -29,7 +29,16 @@ export default function Experience() {
 
         <div className="about-box">
           <h2>ABOUT ME</h2>
-          <div className="about-textbox"></div>
+          <div className="about-textbox">
+            I’m a designer and developer with experience in traditional art,
+            logo design, and web development. I enjoy creating things that
+            feel meaningful, tell a story and represent creativity. I’ve worked 
+            across traditional art, digital art, graphic design, and web 
+            development, and I’m currently exploring computer science, art, and design 
+            as a high school senior. Next year I will be attending Rochester Institute
+            of Technology to study 3D Digital Design and expand my design experience 
+            into the world of video games.
+          </div>
         </div>
       </section>
 

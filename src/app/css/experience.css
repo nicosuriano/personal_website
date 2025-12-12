@@ -6,9 +6,9 @@
 }
 
 .section-title{
-    font-size: 28px;
-    color: var(--primaryTeal);
-    margin-bottom: 10px;
+  font-size: 28px;
+  color: var(--primaryTeal);
+  margin-bottom: 10px;
 }
 
 .exp-cards {
@@ -45,5 +45,4 @@
 .exp-card li {
   margin-bottom: 8px;
   color: var(--primaryTeal);
-  opacity: 0.9;
 }
