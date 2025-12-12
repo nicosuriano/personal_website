@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 
+/* ---------- MAIN ---------- */
 .home-container {
   display: flex;
   flex-direction: column;
@@ -35,33 +36,13 @@
   line-height: 0.9;
 }
 
-.contact-button-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding: 1rem 1rem;
+.contact-button-container{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 100;
 }
 
-.home-images-container {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-
-.home-images {
-  display: flex;
-  justify-content: center;
-  align-items: stretch; 
-}
-
-.home-image {
-  width: 33.33%;
-  height: 400px; 
-  object-fit: cover;
-  opacity: 0.5;
-}
 
 .home-logo-container {
   position: absolute;
@@ -83,3 +64,204 @@
   gap: 2rem;
   margin-top: 1rem;
 }
+
+/* ---------- ABOUT ---------- */
+.about-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.about-headshot {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.about-box {
+  width: 600px;
+  text-align: left;
+}
+
+.about-box h2 {
+  font-size: 28px;
+  color: var(--primaryTeal);
+  margin-bottom: 10px;
+}
+
+.about-textbox {
+  width: 100%;
+  height: 140px;
+  border: 3px solid var(--primaryTeal);
+  border-radius: 6px;
+  margin-bottom: 25px;
+}
+
+/* ---------- IMAGE BUTTONS ---------- */
+.bottom-buttons-row {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  margin-top: 90px;
+}
+
+.bottom-image-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.bottom-image-wrapper {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  border: 4px solid var(--primaryTeal);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.bottom-image {
+  object-fit: cover;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.bottom-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  transition: 0.35s ease;
+}
+
+.bottom-image-label {
+  position: absolute;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  z-index: 3;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  padding: 120px 10px;
+}
+
+
+.bottom-image-button:hover .bottom-image-wrapper {
+  transform: scale(1.03);
+}
+
+.bottom-image-button:hover .bottom-image {
+  transform: scale(1.12);
+}
+
+.bottom-image-button:hover .bottom-image-overlay {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.bottom-image-button:hover .bottom-image-label {
+  color: #ffffff;
+  filter: drop-shadow(0 0 3px black);
+}
+
+/* ---------- NAV ---------- */
+.nav-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+  z-index: 200;
+}
+
+.nav-button {
+  background: none;
+  border: 3px solid var(--primaryTeal);
+  padding: 10px 18px;
+  border-radius: 12px;
+
+  color: var(--primaryTeal);
+  font-size: 20px;
+  font-family: "Hammersmith One", sans-serif;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.nav-button:hover {
+  background: var(--primaryTeal);
+  color: white;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+  margin-top: 120px;
+  border-top: 3px solid var(--primaryTeal);
+  border-bottom: 3px solid var(--primaryTeal);
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-logo {
+  width: 90px;
+  height: auto;
+}
+
+.footer-icon {
+  font-size: 50px;
+  color: var(--primaryOrange);
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.15);
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav-item {
+  color: var(--primaryTeal);
+  font-size: 18px;
+  font-family: "Hammersmith One", sans-serif;
+  text-decoration: none;
+  border: 3px solid var(--primaryTeal);
+  padding: 8px 14px;
+  border-radius: 10px;
+
+  transition: 0.25s ease;
+}
+
+.footer-nav-item:hover {
+  background: var(--primaryTeal);
+  color: white;
+}
+

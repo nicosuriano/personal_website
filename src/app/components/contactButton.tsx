@@ -22,32 +22,32 @@ export default function ContactButton({
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "var(--primaryOrange)",
-    color: "white",
+    backgroundColor: "white",
+    color: "var(--primaryOrange)",
     fontFamily: "Hammersmith One, sans-serif",
     fontWeight: "bold",
-    fontSize: style?.fontSize || "30px",
-    border: "5px solid transparent",
+    fontSize: style?.fontSize || "25px",
+    border: "3px solid",
     borderRadius: "14px",
     padding: "20px 20px",
-    width: "200px",
-    height: "70px",
+    width: style?.width || "170px",
+    height: style?.height || "70px",
     textAlign: "center" as const,
     cursor: "pointer",
     transition: "background-color 0.3s",
-    margin: "10px",
+    margin: "10px 0px",
   };
 
   const buttonHover = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.currentTarget.style.backgroundColor = "white";
-    e.currentTarget.style.color = "var(--primaryOrange)";
-    e.currentTarget.style.borderColor = "var(--primaryOrange)";
+    e.currentTarget.style.backgroundColor = "var(--primaryOrange)";
+    e.currentTarget.style.color = "white";
+    e.currentTarget.style.borderColor = "white";
   };
 
   const buttonUnhover = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.currentTarget.style.backgroundColor = "var(--primaryOrange)";
-    e.currentTarget.style.color = "white";
-    e.currentTarget.style.borderColor = "transparent";
+    e.currentTarget.style.backgroundColor = "white";
+    e.currentTarget.style.color = "var(--primaryOrange)";
+    e.currentTarget.style.borderColor = "var(--primaryOrange)";
   };
 
   return (
