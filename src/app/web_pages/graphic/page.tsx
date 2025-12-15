@@ -1,18 +1,31 @@
-import Image from "next/image";
-import HeadShot from "./assets/bioPhoto.png";
 import LogoButton from "../../components/logoButton";
 import NavBar from "../../components/nav";
 import Footer from "../../components/footer";
-import ContactButton from "../../components/contactButton";
-import ImageButton from "../../components/imageButton";
-import WebEx from "../../assets/webEx.png";
-import ArtEx from "../../assets/artEx.png";
-import GraphicEx from "../../assets/graphicEx.jpeg";
+import GalleryGrid from "../../components/galleryGrid";
+import MyLogo from "../../assets/myLogo.png"
+import LinkHands from "../../assets/LinkhandsLogo.png"
+import Poster from "../../assets/poster.png"
+import Shirt from "../../assets/shirtLogo.png"
+import Innovations from "../../assets/innovationsLogo.jpeg"
+import Transition from "../../assets/transitionLogo.png"
 import "../../css/homepage.css";
 import "../../css/logo.css";
+import "../../css/imageGrid.css";
 
 
 export default function GraphicDesign() {
+
+  const commission1 = [
+    { src: MyLogo, caption: "My person website logo." },
+    { src: Transition, caption: "Transition Program logo, design based on student drawing (through Hamilton Southeastern High School)." },
+    { src: LinkHands, caption: "LinkHands app logo." },
+    { src: Innovations, caption: "Royal Innovation Lab logo (through Hamilton Southeastern High School)." },
+  ];
+  
+  const commission2 = [
+    { src: Poster, caption: "Computer Science class pathways poster (through Hamilton Southeastern High School)." },
+    { src: Shirt, caption: "Official 2025-2026 school t-shirt of the year (through Hamilton Southeastern High School)." },
+  ];
 
   return (
     <main className="home-container">
@@ -27,6 +40,22 @@ export default function GraphicDesign() {
           </span>
         </div>
       </header>
+
+      <div className="gallery-description">
+        A wide range of branding, typography, layout, 
+        and promotional design work. This section highlights 
+        logo design, posters and merchandise graphics.
+      </div>
+
+      <div className="gallery-section-header">
+        COMMISSIONED LOGOS
+      </div>
+      <div className="gallery-section-text">
+        All logos designed by me. Logos belong to and use elements from the company.
+      </div>
+
+      <GalleryGrid images={commission1}> </GalleryGrid>
+      <GalleryGrid images={commission2}> </GalleryGrid>
 
       <Footer />
 
