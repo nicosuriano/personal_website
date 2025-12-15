@@ -2,7 +2,10 @@ import LogoButton from "../../components/logoButton";
 import NavBar from "../../components/nav";
 import Footer from "../../components/footer";
 import GalleryGrid from "../../components/galleryGrid";
-import ArtEx from "../../assets/artEx.png"
+import HomeRR from "../../assets/homepageRR.png"
+import MentorRR from "../../assets/mentorRR.png"
+import InfoRR from "../../assets/infoRR.png"
+import GroupsRR from "../../assets/groupsRR.png"
 import "../../css/homepage.css";
 import "../../css/logo.css";
 import "../../css/imageGrid.css";
@@ -11,10 +14,13 @@ import "../../css/imageGrid.css";
 export default function WebsiteDesign() {
 
   const commission1 = [
-    { src: ArtEx, caption: "16x20 oil paint self portrait on a wooden pannel. (2024)" },
-    { src: ArtEx, caption: "16x20 oil paint self portrait on a wooden pannel. (2024)" },
-    { src: ArtEx, caption: "16x20 oil paint self portrait on a wooden pannel. (2024)" },
-    { src: ArtEx, caption: "16x20 oil paint self portrait on a wooden pannel. (2024)" },
+    { src: HomeRR, caption: "Homepage for Hamilton Southeastern's Royal Rumble website." },
+    { src: MentorRR, caption: "Mentor view for Hamilton Southeastern's Royal Rumble website." },
+  ];
+
+  const commission2 = [
+    { src: InfoRR, caption: "Mentor info page for Hamilton Southeastern's Royal Rumble website." },
+    { src: GroupsRR, caption: "All groups view page for Hamilton Southeastern's Royal Rumble website." },
   ];
 
   return (
@@ -47,6 +53,7 @@ export default function WebsiteDesign() {
       </div>
 
       <GalleryGrid images={commission1}> </GalleryGrid>
+      <GalleryGrid images={commission2}> </GalleryGrid>
 
       <Footer />
 
