@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import "../css/homepage.css";
 import { useRouter } from "next/navigation";
 
 type BottomImageButtonProps = {
@@ -18,7 +18,9 @@ export default function BottomImageButton({ label, image, href }: BottomImageBut
   return (
     <button className="bottom-image-button" onClick={handleClick}>
       <div className="bottom-image-wrapper">
-        <Image src={image} alt={label} fill className="bottom-image" />
+        <div className="watermarked-image">
+          <Image src={image} alt={label} fill className="bottom-image" />
+        </div>
 
         <div className="bottom-image-overlay" />
 

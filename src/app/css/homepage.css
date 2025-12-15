@@ -241,6 +241,8 @@
 .footer-right {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  font-size: 15px;
   gap: 25px;
 }
 
@@ -266,3 +268,23 @@
   color: white;
 }
 
+/* ---------- WATERMARK ---------- */
+
+.watermarked-image {
+  position: absolute;
+  inset: 0;
+}
+
+.watermarked-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("/watermark.svg");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+
+  opacity: 1;
+  pointer-events: none;
+  z-index: 3;
+}

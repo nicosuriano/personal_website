@@ -24,6 +24,7 @@ export default function Footer() {
     { label: "Gallery", href: "/web_pages/gallery" },
     { label: "Contact", href: "/web_pages/contact" },
   ];
+
   return (
     <footer className="footer-container">
         <div className="footer-left">
@@ -60,6 +61,7 @@ export default function Footer() {
                     Contact
                 </Link>
             </nav>
+            © {new Date().getFullYear()} Nico Suriano — All artwork protected
         </div>
     </footer>
   );

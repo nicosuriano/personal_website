@@ -1,10 +1,17 @@
-import type { Metadata } from "next";
+"use client";
+
+import { useEffect } from "react";
 import "./css/globals.css";
 
-export const metadata: Metadata = {
-  title: "Nico Suriano",
-  description: "A Next.js website by Nico Suriano",
-};
+export function DisableRightClick() {
+  useEffect(() => {
+    const disable = (e: MouseEvent) => e.preventDefault();
+    document.addEventListener("contextmenu", disable);
+    return () => document.removeEventListener("contextmenu", disable);
+  }, []);
+
+  return null;
+}
 
 export default function RootLayout({
   children,
@@ -13,6 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <DisableRightClick />
       <head>
         <link rel="icon" href="/logoFavicon.svg" sizes="any" />
       </head>

@@ -27,6 +27,16 @@ export default function Gallery() {
       </header>
 
       <GallerySection
+        title="Creative Expression"
+        image={ArtEx}
+        description="This collection includes traditional art,
+                    sculpture, and expressive visual storytelling.
+                    These pieces explore mood, identity, movement, 
+                    and unique aesthetics."
+        href="/web_pages/art"
+      />
+
+      <GallerySection
         title="Website Design"
         image={WebEx}
         description="My work in website design focuses on usability, 
@@ -35,16 +45,6 @@ export default function Gallery() {
                     creative, interfaces using React, Next.js, and 
                     strong visual design principles."
         href="/web_pages/web"
-      />
-
-      <GallerySection
-        title="Creative Expression"
-        image={ArtEx}
-        description="This collection includes traditional art,
-                    sculpture, and expressive visual storytelling.
-                    These pieces explore mood, identity, movement, 
-                    and unique aesthetics."
-        href="/web_pages/art"
       />
 
       <GallerySection

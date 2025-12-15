@@ -18,7 +18,13 @@ export default function GallerySection({
   return (
     <section className="gallery-section">
       <div className="gallery-image-container">
-        <Image src={image} alt={title} className="gallery-section-image" />
+        <div className="gallery-watermark">
+          <Image
+            src={image}
+            alt={title}
+            className="gallery-section-image"
+          />
+        </div>
       </div>
 
       <div className="gallery-text-box">

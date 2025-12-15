@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+  <g transform="translate(100 100) rotate(-30)">
+    <!-- Dark watermark (slightly offset) -->
+    <text
+      x="20"
+      y="-40"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      fill="rgba(0,0,0,0.05)"
+      font-size="15"
+      font-family="Arial, sans-serif"
+    >
+      Nico Suriano
+    </text>
+    <!-- Light watermark -->
+    <text
+      x="0"
+      y="0"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      fill="rgba(255,255,255,0.05)"
+      font-size="15"
+      font-family="Arial, sans-serif"
+    >
+      Nico Suriano
+    </text>
+
+    <!-- Dark watermark (slightly offset) -->
+    <text
+      x="-40"
+      y="60"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      fill="rgba(0,0,0,0.05)"
+      font-size="15"
+      font-family="Arial, sans-serif"
+    >
+      Nico Suriano
+    </text>
+    <!-- Light watermark -->
+    <text
+      x="0"
+      y="-70"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      fill="rgba(255,255,255,0.05)"
+      font-size="15"
+      font-family="Arial, sans-serif"
+    >
+      Nico Suriano
+    </text>
+  </g>
+</svg>

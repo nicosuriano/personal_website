@@ -1,9 +1,9 @@
 .gallery-section {
   width: 80%;
-  margin: 60px auto;
+  margin: 50px auto;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
 }
 
 .gallery-image-container {
@@ -16,12 +16,15 @@
   border-radius: 18px;
   object-fit: cover;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+  display: block;
 }
 
 .gallery-text-box {
   flex: 1;
   background: rgba(255, 255, 255, 0.08);
-  border: 2px solid var(--primaryTeal);
+  border: 3px solid var(--primaryTeal);
   padding: 30px;
   border-radius: 18px;
 }
@@ -65,3 +68,23 @@
   border: 3px solid var(--primaryOrange);
 }
 
+/* ----- WATERMARK ----- */
+
+.gallery-watermark {
+  position: relative;
+  width: 100%;
+}
+
+.gallery-watermark::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("/watermark.svg");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+
+  opacity: 1;
+  z-index: 10;
+  pointer-events: none;
+}
