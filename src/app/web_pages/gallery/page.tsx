@@ -6,6 +6,7 @@ import GallerySection from "../../components/gallerySection";
 import WebEx from "../../assets/webEx.png";
 import ArtEx from "../../assets/artEx.png";
 import GraphicEx from "../../assets/graphicEx.jpeg";
+import Frame from "../../assets/pictureFrame.png";
 
 import "../../css/homepage.css";
 import "../../css/logo.css";
@@ -54,6 +55,13 @@ export default function Gallery() {
                     and promotional design work. This section highlights 
                     logo design, posters and merchandise graphics."
         href="/web_pages/graphic"
+      />
+
+      <GallerySection
+        title="Video Game Art"
+        image={Frame}
+        description= "This collection shows my start to video game art and animations. Specifically done in a pixel style."
+        href="/web_pages/gameArt"
       />
 
       <Footer />

@@ -1,18 +1,21 @@
-import Image from "next/image";
-import HeadShot from "./assets/bioPhoto.png";
 import LogoButton from "../../components/logoButton";
 import NavBar from "../../components/nav";
 import Footer from "../../components/footer";
-import ContactButton from "../../components/contactButton";
-import ImageButton from "../../components/imageButton";
-import WebEx from "../../assets/webEx.png";
-import ArtEx from "../../assets/artEx.png";
-import GraphicEx from "../../assets/graphicEx.jpeg";
+import GalleryGrid from "../../components/galleryGrid";
+import ArtEx from "../../assets/artEx.png"
 import "../../css/homepage.css";
 import "../../css/logo.css";
+import "../../css/imageGrid.css";
 
 
-export default function WebDesign() {
+export default function WebsiteDesign() {
+
+  const commission1 = [
+    { src: ArtEx, caption: "16x20 oil paint self portrait on a wooden pannel. (2024)" },
+    { src: ArtEx, caption: "16x20 oil paint self portrait on a wooden pannel. (2024)" },
+    { src: ArtEx, caption: "16x20 oil paint self portrait on a wooden pannel. (2024)" },
+    { src: ArtEx, caption: "16x20 oil paint self portrait on a wooden pannel. (2024)" },
+  ];
 
   return (
     <main className="home-container">
@@ -27,6 +30,23 @@ export default function WebDesign() {
           </span>
         </div>
       </header>
+
+      <div className="gallery-description">
+        My work in website design focuses on usability, 
+        clean layout, color relationships, and 
+        efficient interaction. I enjoy building modern,
+        creative, interfaces using React, Next.js, and 
+        strong visual design principles.
+      </div>
+
+      <div className="gallery-section-header">
+        COMMISSIONED WEBSITES
+      </div>
+      <div className="gallery-section-text">
+        All websites designed by me. Commissioned websites belong to the company.
+      </div>
+
+      <GalleryGrid images={commission1}> </GalleryGrid>
 
       <Footer />
 

@@ -79,7 +79,7 @@ export default function Experience() {
           />
         </div>
       </section>
-      <ContactButton href="/web_pages/experience"
+      <ContactButton href="/web_pages/gallery"
                      style = {{ width: "200px", fontSize: "25px"}}>
         VIEW WORK
       </ContactButton>

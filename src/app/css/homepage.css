@@ -106,7 +106,7 @@
 .bottom-buttons-row {
   display: flex;
   justify-content: center;
-  gap: 90px;
+  gap: 50px;
   margin-top: 90px;
 }
 

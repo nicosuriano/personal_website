@@ -5,7 +5,7 @@ import Image, { StaticImageData } from "next/image";
 
 type GalleryItem = {
   src: string | StaticImageData; 
-  caption: string;
+  caption?: string;
 };
 
 type GalleryGridProps = {
@@ -21,9 +21,6 @@ export default function GalleryGrid({ images = [], children }: GalleryGridProps)
 
   return (
     <div className="gallery-section">
-      {/* Description box */}
-      {children && <div className="gallery-description">{children}</div>}
-
       {/* Grid of images */}
       <div className="gallery-grid">
         {images.map((img, index) => (
@@ -32,7 +29,7 @@ export default function GalleryGrid({ images = [], children }: GalleryGridProps)
                     <div className="gallery-watermark">
                         <Image
                             src={img.src}
-                            alt={img.caption}
+                            alt="image error"
                             className="gallery-image"
                             width={400}
                             height={300}
@@ -57,7 +54,6 @@ export default function GalleryGrid({ images = [], children }: GalleryGridProps)
                         width={650}
                     />
                 </div>
-              <div className="gallery-watermark" />
             </div>
             <button className="lightbox-close" onClick={closeLightbox}>
               ×

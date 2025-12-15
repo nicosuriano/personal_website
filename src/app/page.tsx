@@ -8,6 +8,7 @@ import ImageButton from "./components/imageButton";
 import WebEx from "./assets/webEx.png";
 import ArtEx from "./assets/artEx.png";
 import GraphicEx from "./assets/graphicEx.jpeg";
+import Frame from "./assets/pictureFrame.png";
 import "./css/homepage.css";
 import "./css/logo.css";
 
@@ -72,6 +73,12 @@ export default function Home() {
           label="Graphic Design"
           image={GraphicEx}
           href="/web_pages/graphic"
+        />
+
+        <ImageButton 
+          label="Video Game Art"
+          image={Frame}
+          href="/web_pages/gameArt"
         />
       </section>
 
