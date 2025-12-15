@@ -1,14 +1,9 @@
-import Image from "next/image";
-import HeadShot from "./assets/bioPhoto.png";
 import LogoButton from "../../components/logoButton";
 import NavBar from "../../components/nav";
 import Footer from "../../components/footer";
-import ContactButton from "../../components/contactButton";
-import ImageButton from "../../components/imageButton";
-import WebEx from "../../assets/webEx.png";
-import ArtEx from "../../assets/artEx.png";
-import GraphicEx from "../../assets/graphicEx.jpeg";
+import ContactPage from "../../components/contact";
 import "../../css/homepage.css";
+import "../../css/contact.css";
 import "../../css/logo.css";
 
 
@@ -23,10 +18,12 @@ export default function Contact() {
         <div className="title-left">
           Contact
           <span style={{color: "var(--primaryOrange)", marginLeft: "20px"}}>
-            Me
+            Information
           </span>
         </div>
       </header>
+
+      <ContactPage></ContactPage>
 
       <Footer />
 
