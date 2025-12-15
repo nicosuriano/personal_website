@@ -8,6 +8,9 @@ import Poster from "../../assets/poster.png"
 import Shirt from "../../assets/shirtLogo.png"
 import Innovations from "../../assets/innovationsLogo.jpeg"
 import Transition from "../../assets/transitionLogo.png"
+import Hosa from "../../assets/hseHosaLogo.jpeg"
+import CS from "../../assets/hseCSLogo.png"
+import RR from "../../assets/RRLogo.png"
 import "../../css/homepage.css";
 import "../../css/logo.css";
 import "../../css/imageGrid.css";
@@ -21,8 +24,14 @@ export default function GraphicDesign() {
     { src: LinkHands, caption: "LinkHands app logo." },
     { src: Innovations, caption: "Royal Innovation Lab logo (through Hamilton Southeastern High School)." },
   ];
-  
+
   const commission2 = [
+    { src: RR, caption: "Logo for the Hamilton Southeastern High School Royal Rumble website (through Hamilton Southeastern High School). " },
+    { src: Hosa, caption: "Logo for the Hamilton Southeastern High School branch of HOSA (through Hamilton Southeastern High School). " },
+    { src: CS, caption: "Logo for the Hamilton Southeastern High School computer science program (through Hamilton Southeastern High School). " },
+  ];
+  
+  const commission3 = [
     { src: Poster, caption: "Computer Science class pathways poster (through Hamilton Southeastern High School)." },
     { src: Shirt, caption: "Official 2025-2026 school t-shirt of the year (through Hamilton Southeastern High School)." },
   ];
@@ -56,6 +65,7 @@ export default function GraphicDesign() {
 
       <GalleryGrid images={commission1}> </GalleryGrid>
       <GalleryGrid images={commission2}> </GalleryGrid>
+      <GalleryGrid images={commission3}> </GalleryGrid>
 
       <Footer />
 
