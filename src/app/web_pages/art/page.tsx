@@ -7,6 +7,9 @@ import Pen from "../../assets/pen.jpeg";
 import WaterColor from "../../assets/waterColor.jpeg";
 import Mirror from "../../assets/mirror.jpg";
 import Silhouette from "../../assets/silhouette.jpeg";
+import WC2 from "../../assets/watercolor2.jpeg";
+import Pannel4x8 from "../../assets/pannel4x8.jpg";
+
 import Overlap from "../../assets/overlap.jpg";
 import Misplaced from "../../assets/misplaced.jpeg";
 import Natalie from "../../assets/natalie.jpg";
@@ -14,6 +17,8 @@ import Perspective from "../../assets/perspective.jpeg";
 import Cats from "../../assets/cats.jpg";
 import Dancer from "../../assets/dancer.jpg";
 import Line from "../../assets/line.jpeg";
+import GG from "../../assets/GG.jpeg";
+
 import Bo from "../../assets/bo.png";
 import Cat1 from "../../assets/cat1.png";
 import Chloe from "../../assets/chloe.png";
@@ -27,38 +32,47 @@ import "../../css/imageGrid.css";
 export default function Art() {
 
   const AP1 = [
-    { src: ArtEx, caption: "18x24 oil paint self portrait on a wooden pannel. (2024)" },
-    { src: Pen, caption: "8x8 white gel pen stippling self portrait on black paper. (2025)" },
-    { src: WaterColor, caption: "16x20 water color self portrait on paper. (2025)" },
+    { src: ArtEx, caption: "18x24 inch oil paint self portrait on a wooden pannel. (2024)" },
+    { src: Pen, caption: "8x8 inch white gel pen stippling self portrait on black paper. (2025)" },
+    { src: WaterColor, caption: "16x20 inch water color self portrait on paper. (2025)" },
   ];
 
   const AP2 = [
-    { src: Mirror, caption: "16x20 oil paint self portrait on canvas. (2025)" },
-    { src: Silhouette, caption: "31x36 oil paint self portrait on unstretched canvas. (2025)" },
+    { src: Mirror, caption: "16x20 inch oil paint self portrait on canvas. (2025)" },
+    { src: WC2, caption: "18x24 inch water color self portrait on paper. (2026)" },
+    { src: Silhouette, caption: "31x36 inch oil paint self portrait on unstretched canvas. (2025)" },
+  ];
+
+  const AP3 = [
+    { src: Pannel4x8, caption: "4x8 foot oil paint self portrait on canvas. (2026)" },
   ];
 
   const other1 = [
-    { src: Natalie, caption: "16x20 oil paint portrait on canvas. (2025)" },
-    { src: Cats, caption: "16x20 white charcoal drawing on a black paper. (2020)" },
-    { src: Dancer, caption: "16x20 oil paint portrait on canvas. (2023)" },
+    { src: Natalie, caption: "16x20 inch oil paint portrait on canvas. (2025)" },
+    { src: Cats, caption: "16x20 inch white charcoal drawing on a black paper. (2020)" },
+    { src: Dancer, caption: "16x20 inch oil paint portrait on canvas. (2023)" },
   ];
 
   const other2 = [
-    { src: Overlap, caption: "5x7 oil paint self portrait on a wooden pannel. (2024)" },
-    { src: Perspective, caption: "10x12 colored pencil perspective drawing on paper. (2023)" },
-    { src: Misplaced, caption: "5x7 oil paint self portrait on canvas. (2025)" },
-    { src: Line, caption: "10x12 pen continuous line blind contour self portrait on paper. (2023)" },
+    { src: Overlap, caption: "5x7 inch oil paint self portrait on a wooden pannel. (2024)" },
+    { src: Line, caption: "10x12 inch pen continuous line blind contour self portrait on paper. (2023)" },
+    { src: Misplaced, caption: "5x7 inch oil paint self portrait on canvas. (2025)" },
+  ];
+  
+  const other3 = [
+    { src: Perspective, caption: "10x12 inch colored pencil perspective drawing on paper. (2023)" },
+    { src: GG, caption: "5x7 inch graphite portrait on paper (2026)" },
   ];
 
   const commission1 = [
-    { src: Cat1, caption: "5x7 white/ black charcoal pet portrait on tan paper. (2023)" },
-    { src: Dog1, caption: "5x7 white choarcoal pet portrait on black paper. (2021)" },
-    { src: Chloe, caption: "10x12 white/ black charcoal pet protrait on tan paper. (2023)" },
+    { src: Cat1, caption: "5x7 inch white/ black charcoal pet portrait on tan paper. (2023)" },
+    { src: Dog1, caption: "5x7 inch white choarcoal pet portrait on black paper. (2021)" },
+    { src: Chloe, caption: "10x12 inch white/ black charcoal pet protrait on tan paper. (2023)" },
   ];
   
   const commission2 = [
-    { src: Bo, caption: "10x12 white charcoal pet portrait on black paper. (2022)" },
-    { src: Thor, caption: "10x12 white charcoal pet portrait on black paper. (2022)" },
+    { src: Bo, caption: "10x12 inch white charcoal pet portrait on black paper. (2022)" },
+    { src: Thor, caption: "10x12 inch white charcoal pet portrait on black paper. (2022)" },
   ];
 
   return (
@@ -97,6 +111,7 @@ export default function Art() {
 
       <GalleryGrid images={AP1}> </GalleryGrid>
       <GalleryGrid images={AP2}> </GalleryGrid>
+      <GalleryGrid images={AP3}> </GalleryGrid>
 
       <div className="gallery-section-header">
         OTHER PROJECTS
@@ -104,6 +119,7 @@ export default function Art() {
 
       <GalleryGrid images={other1}> </GalleryGrid>
       <GalleryGrid images={other2}> </GalleryGrid>
+      <GalleryGrid images={other3}> </GalleryGrid>
 
       <div className="gallery-section-header">
         COMMISSIONED WORK
