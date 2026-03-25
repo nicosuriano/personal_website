@@ -58,12 +58,6 @@ export default function Home() {
 
       <section className="bottom-buttons-row">
         <ImageButton 
-          label="Website Design"
-          image={WebEx}
-          href="/web_pages/web"
-        />
-
-        <ImageButton 
           label="Creative Expression"
           image={ArtEx}
           href="/web_pages/art"
@@ -75,6 +69,12 @@ export default function Home() {
           href="/web_pages/graphic"
         />
 
+        <ImageButton 
+          label="Website Design"
+          image={WebEx}
+          href="/web_pages/web"
+        />
+        
         <ImageButton 
           label="Video Game Art"
           image={Frame}
