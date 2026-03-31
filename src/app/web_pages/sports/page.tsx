@@ -2,25 +2,20 @@ import LogoButton from "../../components/logoButton";
 import NavBar from "../../components/nav";
 import Footer from "../../components/footer";
 import GalleryGrid from "../../components/galleryGrid";
-import HomeRR from "../../assets/homepageRR.png"
-import MentorRR from "../../assets/mentorRR.png"
-import InfoRR from "../../assets/infoRR.png"
-import GroupsRR from "../../assets/groupsRR.png"
+import Volleyball1 from "../../assets/volleyball1.png"
+import Football1 from "../../assets/football1.png"
+import Hockey1 from "../../assets/hockey1.png"
 import "../../css/homepage.css";
 import "../../css/logo.css";
 import "../../css/imageGrid.css";
 
 
-export default function WebsiteDesign() {
+export default function SportsGraphics() {
 
   const commission1 = [
-    { src: HomeRR, caption: "Homepage for Hamilton Southeastern's Royal Rumble website." },
-    { src: MentorRR, caption: "Mentor view for Hamilton Southeastern's Royal Rumble website." },
-  ];
-
-  const commission2 = [
-    { src: InfoRR, caption: "Mentor info page for Hamilton Southeastern's Royal Rumble website." },
-    { src: GroupsRR, caption: "All groups view page for Hamilton Southeastern's Royal Rumble website." },
+    { src: Volleyball1, caption: "Volleyball graphic for Hamilton Southeastern's sports website." },
+    { src: Football1, caption: "Football graphic for Hamilton Southeastern's sports website." },
+    { src: Hockey1, caption: "Hockey graphic for Hamilton Southeastern's sports website." }
   ];
 
   return (
@@ -30,9 +25,9 @@ export default function WebsiteDesign() {
 
       <header className="home-header">
         <div className="title-left">
-          Website
+          Sports
           <span style={{color: "var(--primaryOrange)", marginLeft: "20px"}}>
-            Design
+            Graphics
           </span>
         </div>
       </header>
@@ -46,14 +41,13 @@ export default function WebsiteDesign() {
       </div>
 
       <div className="gallery-section-header">
-        COMMISSIONED WEBSITES
+        Sports Graphics
       </div>
       <div className="gallery-section-text">
-        All websites designed by me. Commissioned websites belong to the company.
+        All graphics designed by me. Photo credits belong to student photographers in Hamilton Southeastern Sports Media.
       </div>
 
       <GalleryGrid images={commission1}> </GalleryGrid>
-      <GalleryGrid images={commission2}> </GalleryGrid>
 
       <Footer />
 
