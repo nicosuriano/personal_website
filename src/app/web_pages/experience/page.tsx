@@ -1,5 +1,7 @@
+"use client";
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import HeadShot from "../../assets/bioPhoto.png";
+import HeadShot from "../../assets/headShot.jpeg";
 import LogoButton from "../../components/logoButton";
 import NavBar from "../../components/nav";
 import Footer from "../../components/footer";
@@ -10,13 +12,20 @@ import "../../css/logo.css";
 import "../../css/experience.css";
 
 export default function Experience() {
+
+  const [animateHeader, setAnimateHeader] = useState(false);
+  
+  useEffect(() => {
+    setAnimateHeader(true); // trigger animation on mount
+  }, []);
+
   return (
     <main className="home-container">
       <LogoButton />
       <NavBar />
 
       <header className="home-header">
-        <div className="title-left">
+        <div className={`title-left ${animateHeader ? "animate" : ""}`} style={{fontSize: "85px"}}>
           Design
           <span style={{ color: "var(--primaryOrange)", marginLeft: "20px" }}>
             Experience
@@ -25,19 +34,21 @@ export default function Experience() {
       </header>
 
        <section className="about-section">
-        <Image src={HeadShot} alt="Headshot" className="about-headshot" />
+        <Image src={HeadShot} alt="Headshot" className="about-headshot" style={{ height: "325px", width: "350px" }} />
 
         <div className="about-box">
           <h2>ABOUT ME</h2>
           <div className="about-textbox">
-            I’m a designer and developer with experience in traditional art,
-            logo design, and web development. I enjoy creating things that
-            feel meaningful, tell a story and represent creativity. I’ve worked 
-            across traditional art, digital art, graphic design, and web 
-            development, and I’m currently exploring computer science, art, and design 
-            as a high school senior. Next year I will be attending Rochester Institute
-            of Technology to study 3D Digital Design and expand my design experience 
-            into the world of video games.
+            I’m a designer and developer with a background in traditional art, graphic design, 
+            and UI/UX design, with a growing focus on sports graphics. My work centers on 
+            creating purposeful, story-driven visuals that balance creativity with clear 
+            communication. I’ve designed graphics, websites, logos, and event materials for 
+            school organizations, developing a strong sense of layout, branding, and visual 
+            consistency. With a foundation in fine art through AP Drawing and as an incoming 
+            Rochester Institute of Technology student studying digital design and visual arts, 
+            I approach design with both technical skill and artistic perspective. Recently, 
+            I’ve begun applying these skills to sports design, where I explore energy, motion, 
+            and identity through bold, engaging visuals.
           </div>
         </div>
       </section>
@@ -47,34 +58,48 @@ export default function Experience() {
 
         <div className="exp-cards">
           <ExperienceCard
-            title="AP COURSES"
+            title="RELEVANT COURSES"
             items={[
-              "AP Computer Science Principles",
-              "AP Seminar",
-              "AP Computer Science A",
-              "AP Research",
+              "Sports Media",
+              "Website & Database Design",
               "AP Drawing",
+              "AP Computer Science Principles",
+              "AP Computer Science A"
             ]}
           />
 
           <ExperienceCard
             title="SKILLS"
             items={[
-              "Painting, Drawing, Sketching, Sculpting",
-              "Illustration, Concept Art, Storyboarding",
-              "Color Theory, Composition, Visual Design",
-              "Wireframing, Prototyping, Interaction Design",
+              "Color Theory & Composition",
+              "Branding & Visual Identity",
+              "Painting & Drawing",
+              "Concept Art & Storyboarding",
+              "UI/ UX Design",
+            ]}
+          />
+
+          <ExperienceCard
+            title="TOOLS"
+            items={[
+              "Adobe Illustrator",
+              "Adobe Photoshop",
+              "Canva Pro",
+              "Figma",
+              "HTML/CSS",
+              "JavaScript",
+
             ]}
           />
 
           <ExperienceCard
             title="PROJECTS"
             items={[
+              "HSE Graphic Design Work",
+              "HSE Sports Website Design",
               "Personal Portfolio Website",
               "AP Drawing Portfolio",
               "Logo Design",
-              "School Graphic Design Work",
-              "School Website Design",
             ]}
           />
         </div>

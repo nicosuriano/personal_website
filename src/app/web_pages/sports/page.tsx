@@ -1,3 +1,5 @@
+"use client";
+import { useEffect, useState } from "react";
 import LogoButton from "../../components/logoButton";
 import NavBar from "../../components/nav";
 import Footer from "../../components/footer";
@@ -18,13 +20,19 @@ export default function SportsGraphics() {
     { src: Hockey1, caption: "Hockey graphic for Hamilton Southeastern's sports website." }
   ];
 
+  const [animateHeader, setAnimateHeader] = useState(false);
+      
+  useEffect(() => {
+    setAnimateHeader(true); // trigger animation on mount
+  }, []);
+
   return (
     <main className="home-container">
       <LogoButton />
       <NavBar />
 
       <header className="home-header">
-        <div className="title-left">
+        <div className={`title-left ${animateHeader ? "animate" : ""}`} style={{fontSize: "85px"}}>
           Sports
           <span style={{color: "var(--primaryOrange)", marginLeft: "20px"}}>
             Graphics
@@ -33,11 +41,7 @@ export default function SportsGraphics() {
       </header>
 
       <div className="gallery-description">
-        My work in website design focuses on usability, 
-        clean layout, color relationships, and 
-        efficient interaction. I enjoy building modern,
-        creative, interfaces using React, Next.js, and 
-        strong visual design principles.
+        sports graphic description here 
       </div>
 
       <div className="gallery-section-header">

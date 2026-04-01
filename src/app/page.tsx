@@ -1,5 +1,7 @@
+"use client";
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import HeadShot from "./assets/bioPhoto.png";
+import HeadShot from "./assets/headShot.jpeg";
 import LogoButton from "./components/logoButton";
 import NavBar from "./components/nav";
 import Footer from "./components/footer";
@@ -15,20 +17,26 @@ import "./css/logo.css";
 
 export default function Home() {
 
+  const [animateHeader, setAnimateHeader] = useState(false);
+
+  useEffect(() => {
+    setAnimateHeader(true); // trigger animation on mount
+  }, []);
+
   return (
     <main className="home-container">
       <LogoButton />
       <NavBar />
 
       <header className="home-header">
-        <div className="title-left">
+        <div className={`title-left ${animateHeader ? "animate" : ""}`}>
           Nico 
           <span style={{color: "var(--primaryOrange)", marginLeft: "20px"}}>
             Suriano
           </span>
         </div>
 
-        <div className="title-right">
+        <div className={`title-right ${animateHeader ? "animate" : ""}`}>
           <div style={{color: "var(--primaryOrange)"}}>Art +</div>
           <div>Design</div>
         </div>

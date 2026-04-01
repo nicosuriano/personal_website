@@ -1,3 +1,5 @@
+"use client";
+import { useEffect, useState } from "react";
 import LogoButton from "../../components/logoButton";
 import NavBar from "../../components/nav";
 import Footer from "../../components/footer";
@@ -39,13 +41,19 @@ export default function GraphicDesign() {
 
   ];
 
+  const [animateHeader, setAnimateHeader] = useState(false);
+    
+  useEffect(() => {
+    setAnimateHeader(true); // trigger animation on mount
+  }, []);
+
   return (
     <main className="home-container">
       <LogoButton />
       <NavBar />
 
       <header className="home-header">
-        <div className="title-left">
+        <div className={`title-left ${animateHeader ? "animate" : ""}`} style={{fontSize: "85px"}}>
           Graphic
           <span style={{color: "var(--primaryOrange)", marginLeft: "20px"}}>
             Design
