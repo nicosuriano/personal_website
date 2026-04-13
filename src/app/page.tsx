@@ -9,7 +9,7 @@ import ContactButton from "./components/contactButton";
 import ImageButton from "./components/imageButton";
 import Volleyball1 from "./assets/volleyball1.png";
 import ArtEx from "./assets/artEx.png";
-import GraphicEx from "./assets/graphicEx.jpeg";
+import NEHSLogo from "./assets/nehsLogo.png";
 import Frame from "./assets/pictureFrame.png";
 import "./css/homepage.css";
 import "./css/logo.css";
@@ -49,7 +49,7 @@ export default function Home() {
           <h2>ABOUT ME</h2>
           <div className="about-textbox">
             I’m a designer and developer with a background in traditional art, graphic design, 
-            and UI/UX design, with a growing focus on sports graphics. My work centers on 
+            and UI/UX design, with a growing interest in sports graphics. My work centers on 
             creating purposeful, story-driven visuals that balance creativity with clear 
             communication. I’ve designed graphics, websites, logos, and event materials for 
             school organizations, developing a strong sense of layout, branding, and visual 
@@ -81,7 +81,7 @@ export default function Home() {
 
         <ImageButton 
           label="Graphic Design"
-          image={GraphicEx}
+          image={NEHSLogo}
           href="/web_pages/graphic"
         />
         

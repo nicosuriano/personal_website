@@ -100,7 +100,7 @@ export default function Art() {
 
       <div className="gallery-description">
         This collection includes traditional art,
-        sculpture, video game art and expressive visual storytelling.
+        sculpture, and expressive visual storytelling.
         These pieces explore mood, identity, movement, 
         and unique aesthetics.
       </div>

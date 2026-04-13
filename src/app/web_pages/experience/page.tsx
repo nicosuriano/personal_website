@@ -6,7 +6,7 @@ import LogoButton from "../../components/logoButton";
 import NavBar from "../../components/nav";
 import Footer from "../../components/footer";
 import ExperienceCard from "../../components/experienceCard";
-import ContactButton from "../../components/contactButton";
+import ResumeButton from "../../components/resumeButton";
 import "../../css/homepage.css";
 import "../../css/logo.css";
 import "../../css/experience.css";
@@ -40,7 +40,7 @@ export default function Experience() {
           <h2>ABOUT ME</h2>
           <div className="about-textbox">
             I’m a designer and developer with a background in traditional art, graphic design, 
-            and UI/UX design, with a growing focus on sports graphics. My work centers on 
+            and UI/UX design, with a growing interest in sports graphics. My work centers on 
             creating purposeful, story-driven visuals that balance creativity with clear 
             communication. I’ve designed graphics, websites, logos, and event materials for 
             school organizations, developing a strong sense of layout, branding, and visual 
@@ -104,10 +104,10 @@ export default function Experience() {
           />
         </div>
       </section>
-      <ContactButton href="/web_pages/gallery"
-                     style = {{ width: "200px", fontSize: "25px"}}>
-        VIEW WORK
-      </ContactButton>
+      <ResumeButton href="/assets/Nico_Suriano_Resume.pdf"
+                    style={{ width: "250px"}}>
+        View Resume
+      </ResumeButton>
 
       <Footer />
     </main>

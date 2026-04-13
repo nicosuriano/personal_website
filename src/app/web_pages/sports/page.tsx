@@ -41,7 +41,9 @@ export default function SportsGraphics() {
       </header>
 
       <div className="gallery-description">
-        sports graphic description here 
+        This collection includes sports-related graphics,
+        illustrations, and visual designs. These pieces explore 
+        energy, motion, and team pride through bold, engaging visuals.
       </div>
 
       <div className="gallery-section-header">

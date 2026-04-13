@@ -6,6 +6,7 @@ export default function NavBar() {
   const router = useRouter();
 
   const navItems = [
+    { label: "Home", href: "/" },
     { label: "About", href: "/web_pages/experience" },
     { label: "Gallery", href: "/web_pages/gallery" },
     { label: "Contact", href: "/web_pages/contact" },

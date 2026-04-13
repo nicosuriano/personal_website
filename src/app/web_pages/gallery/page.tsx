@@ -7,7 +7,8 @@ import GallerySection from "../../components/gallerySection";
 
 import WebEx from "../../assets/webEx.png";
 import ArtEx from "../../assets/artEx.png";
-import GraphicEx from "../../assets/graphicEx.jpeg";
+import NEHSLogo from "../../assets/nehsLogo.png";
+import Volleyball from "../../assets/volleyball1.png";
 import Frame from "../../assets/pictureFrame.png";
 
 import "../../css/homepage.css";
@@ -47,6 +48,15 @@ export default function Gallery() {
       />
 
       <GallerySection
+        title="Sports Graphics"
+        image={Volleyball}
+        description="This collection includes sports-related graphics,
+                    illustrations, and visual designs. These pieces explore 
+                    energy, motion, and team pride through bold, engaging visuals."
+        href="/web_pages/sports"
+      />
+
+      <GallerySection
         title="Website Design"
         image={WebEx}
         description="My work in website design focuses on usability, 
@@ -59,7 +69,7 @@ export default function Gallery() {
 
       <GallerySection
         title="Graphic Design"
-        image={GraphicEx}
+        image={NEHSLogo}
         description="A wide range of branding, typography, layout, 
                     and promotional design work. This section highlights 
                     logo design, posters and merchandise graphics."
