@@ -7,6 +7,7 @@ import GalleryGrid from "../../components/galleryGrid";
 import Volleyball1 from "../../assets/volleyball1.png"
 import Football1 from "../../assets/football1.png"
 import Hockey1 from "../../assets/hockey1.png"
+import Lax1 from "../../assets/lax1.png"
 import "../../css/homepage.css";
 import "../../css/logo.css";
 import "../../css/imageGrid.css";
@@ -14,10 +15,14 @@ import "../../css/imageGrid.css";
 
 export default function SportsGraphics() {
 
-  const commission1 = [
-    { src: Volleyball1, caption: "Volleyball graphic for Hamilton Southeastern's sports website." },
-    { src: Football1, caption: "Football graphic for Hamilton Southeastern's sports website." },
-    { src: Hockey1, caption: "Hockey graphic for Hamilton Southeastern's sports website." }
+  const graphic1 = [
+    { src: Volleyball1, caption: "Athlete of the week graphic for Hamilton Southeastern's sports website." },
+    { src: Lax1, caption: "Boys lacrosse schedule graphic for Hamilton Southeastern's sports website." }
+  ];
+
+  const graphic2 = [
+    { src: Hockey1, caption: "Hockey game day graphic for Hamilton Southeastern's sports website." },
+    { src: Football1, caption: "Football win graphic for Hamilton Southeastern's sports website." }
   ];
 
   const [animateHeader, setAnimateHeader] = useState(false);
@@ -53,7 +58,8 @@ export default function SportsGraphics() {
         All graphics designed by me. Photo credits belong to student photographers in Hamilton Southeastern Sports Media.
       </div>
 
-      <GalleryGrid images={commission1}> </GalleryGrid>
+      <GalleryGrid images={graphic1}> </GalleryGrid>
+      <GalleryGrid images={graphic2}> </GalleryGrid>
 
       <Footer />
 

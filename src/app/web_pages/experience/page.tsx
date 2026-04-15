@@ -6,7 +6,7 @@ import LogoButton from "../../components/logoButton";
 import NavBar from "../../components/nav";
 import Footer from "../../components/footer";
 import ExperienceCard from "../../components/experienceCard";
-import ResumeButton from "../../components/resumeButton";
+import ContactButton from "../../components/contactButton";
 import "../../css/homepage.css";
 import "../../css/logo.css";
 import "../../css/experience.css";
@@ -104,10 +104,10 @@ export default function Experience() {
           />
         </div>
       </section>
-      <ResumeButton href="/assets/Nico_Suriano_Resume.pdf"
-                    style={{ width: "250px"}}>
-        View Resume
-      </ResumeButton>
+      <ContactButton href="/web_pages/gallery"
+                      style = {{ width: "150px", fontSize: "19px"}}>
+        VIEW Gallery
+      </ContactButton>
 
       <Footer />
     </main>
