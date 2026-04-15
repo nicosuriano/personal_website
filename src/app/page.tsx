@@ -67,16 +67,17 @@ export default function Home() {
       </section>
 
       <section className="bottom-buttons-row">
-        <ImageButton 
-          label="Creative Expression"
-          image={ArtEx}
-          href="/web_pages/art"
-        />
-
+        
         <ImageButton 
           label="Sports Graphics"
           image={Volleyball1}
           href="/web_pages/sports"
+        />
+
+        <ImageButton 
+          label="Creative Expression"
+          image={ArtEx}
+          href="/web_pages/art"
         />
 
         <ImageButton 

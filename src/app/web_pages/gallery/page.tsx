@@ -38,6 +38,15 @@ export default function Gallery() {
       </header>
 
       <GallerySection
+        title="Sports Graphics"
+        image={Volleyball}
+        description="This collection includes sports-related graphics,
+                    illustrations, and visual designs. These pieces explore 
+                    energy, motion, and team pride through bold, engaging visuals."
+        href="/web_pages/sports"
+      />
+      
+      <GallerySection
         title="Creative Expression"
         image={ArtEx}
         description="This collection includes traditional art,
@@ -47,14 +56,6 @@ export default function Gallery() {
         href="/web_pages/art"
       />
 
-      <GallerySection
-        title="Sports Graphics"
-        image={Volleyball}
-        description="This collection includes sports-related graphics,
-                    illustrations, and visual designs. These pieces explore 
-                    energy, motion, and team pride through bold, engaging visuals."
-        href="/web_pages/sports"
-      />
 
       <GallerySection
         title="Website Design"
